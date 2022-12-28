@@ -1,0 +1,341 @@
+*
+{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: 'Josefin Sans', sans-serif;
+}
+body
+{
+    background-color:rgb(11, 170, 255);
+}
+.start_btn,.infobox,.quizbox,.resultbox
+{
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.19);
+/* transform:scale(0.5,0.5); */
+}
+/* start button styling using css */
+.start_btn button
+{
+    font-size: 25px;
+    outline: none;
+    border: none;
+    padding:15px 30px;
+    cursor:pointer;
+    border-radius:5px;
+    font-weight: bold;
+    background-color:rgb(239, 236, 236);
+}
+.start_btn:hover
+{
+    color:white;
+    background-color:black;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+}
+.infobox 
+{
+
+    width:600px;
+    /* height:240px; */
+    border-radius: 5px;
+    background-color:white;
+    font-size:20px;
+   /*font-weight: bold; */
+    line-height:30px;
+}
+.infotitle
+{
+height: 50px;
+width: 100%;
+font-size:30px;
+display:flex;
+border-bottom:2px solid black;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 20px;
+border-radius: 5px;
+background-color:#cccccc;
+}
+#seconds
+{
+    color:#00b7ff;
+    font-weight: bold;
+}
+.infolist
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.buttons
+{
+    border-top: 2px solid #000000;
+    padding-top: 10px;
+    padding-left: 23rem;
+}
+.start
+{
+    background-color:#00b7ff;
+}
+.start:hover
+{
+    color:rgb(255, 255, 255);
+    background-color:#787878;
+    border: 2px#000000;
+    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.5);
+
+}
+.quit:hover
+{
+color:white;
+background-color:#727272;
+border: 2px#000000;
+box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.quit
+{
+    background-color: #00b7ff;
+}
+.infobox button{
+    
+    margin:8px;
+    margin-right: 8px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding:10px 10px;
+    cursor:pointer;
+    border-radius:5px;
+    font-weight: bold;  
+    color: rgb(255, 255, 255);
+}
+.quizbox
+{
+    opacity:0 ;
+    pointer-events: none;
+    width:600px;
+    border-radius: 5px;
+    background-color:white;
+    font-size:20px;
+    line-height:30px; 
+} 
+.quizbox header
+{
+    position: relative;
+    height:70px;
+    padding:0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.title
+{
+    font-size: 20px;    
+    font-weight: bold;
+}
+.timer
+{
+display: flex;
+font-size: 20px;
+font-weight: bold;
+}
+.timer_sec
+{
+    padding-left: 0px;
+    height:30px;
+    width:50px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(83, 81, 81);
+    text-align: center;
+    border: #000000 solid;
+}
+.quizbox section
+{
+    
+    padding: 20px 60px 10px 20px;
+    font-size: 20px;
+    background-color:rgb(240, 237, 237);
+}
+.que_text
+{
+    font-size: 25px;
+    font-weight: bold;
+    padding:10px 20px;
+    border-radius:5px;
+    border: 2px solid;
+    background-color: #b7f2ca;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+    cursor:pointer;
+}
+.optionlist
+{
+    display: block;
+    padding: 10px
+}
+.option
+{
+    font-weight: bold;
+    justify-content: space-between;
+    display:flex;
+    font-size: 18px;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 6px 16px;
+    border-radius:5px;
+    border: 2px solid;
+    background-color: #b7e1f2;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+    cursor:pointer;
+}
+.option:hover
+{
+    color:#000000;
+    background: rgb(255, 255, 255);
+    border: #b7f2ca;
+}
+.option .icon
+{
+    height: 26px;
+    width: 26px;
+    border:3px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    font-size:13px;
+    /* font-weight: bolder; */
+    line-height: 26px;
+    pointer-events:none;
+}
+.option .icon.tick 
+{
+color: #000000;
+border-color: #30ee1e;
+background-color: #c0fcbb;
+}
+.option .icon.cross
+{
+color: #000000;
+border-color: #ee1e1e;
+background-color: #ff9898;
+}
+.quizbox footer
+{
+   font-weight: bold;
+   display: flex;
+   justify-content: space-between;
+   user-select: none;
+}
+.total_que span
+{  
+    font-size: 20px;
+    display:flex;
+    height:30px; 
+    margin: 20px;
+    padding-right: 10px;
+    justify-content: center;
+    padding-left: 10px;
+    border: #000000 solid;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: #818181;
+}
+.nextque
+{
+margin: 20px;
+padding-right: 10px;
+padding-left: 10px;
+font-weight: bold;
+border: 2px #000000 solid;
+box-shadow: 2px 3px 15px rgba(0, 0, 0,0.6);
+background-color:rgb(182, 245, 210) ;
+cursor: pointer;
+border-radius: 5px;
+font-size: 20px;
+}
+.nextque:hover
+{
+    color:#000000;
+    background: rgb(255, 255, 255);
+    border: #b7f2ca;   
+}
+.resultbox
+{
+    display: flex;
+    width:560px;
+    height: 200px;
+    margin:20px;
+    text-align: center;
+    background-color:white;
+    font-size:20px;
+    font-weight: bold;
+    line-height: 30px;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: space-between;
+    opacity:0 ;
+    pointer-events: none;
+}
+.complete 
+{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom:2px #000000;
+    border-radius: 5px;
+}
+.scoretext span
+{
+    display: flex;
+    justify-content: center;
+    padding-bottom:20px;
+    width: 100%;
+    height: 40px;
+}
+.scoretext p
+{
+    border: 10px#000000;
+    border-radius: 5px;
+}
+.resultbuttons button
+{
+    padding:10px 10px 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    margin-right:10px;
+    border-radius:5px;
+    border: 2px solid black;   
+}
+.restart 
+{
+    color: rgb(254, 254, 254);
+    background-color: #00b7ff;
+}
+.restart:hover
+{
+    color:#131313;
+    background-color: aliceblue;
+    border: 2px #000000;
+    box-shadow: 5px 5px 10px #000000;
+}
+.endquiz
+{
+    color:white;
+    background-color:#00b7ff;
+}
+.endquiz:hover
+{
+    color:#131313;
+    background-color: aliceblue;
+    border: 2px #000000;
+    box-shadow: 5px 5px 10px #000000;
+}
+

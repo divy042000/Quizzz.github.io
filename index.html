@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TakeMyQuiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start The Quiz Button -->
+    <div class="start_btn">
+      <button>Start Quiz</button>
+    </div>
+    <div class="infobox">
+      <div class="infotitle">Rules for this Quiz :</div>
+      <div class="infolist">
+        <div class="info">
+          1. Each Question will have <span id="seconds">15 seconds</span> to
+          answer.
+        </div>
+        <div class="info">2. You can't exit the quiz while playing.</div>
+        <div class="info">
+          3. You can't select the option when the Time goes off.
+        </div>
+        <div class="info">
+          4. Once you select the answer you can't reselect.
+        </div>
+        <div class="info">
+          5. You will get right basis points for the right answer.
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="start">Continue</button>
+        <button class="quit">Quit Quiz</button>
+      </div>
+    </div>
+    <!-- Questio ns Box -->
+    <section class="quizbox">
+      <header>
+        <div class="title">Single Choice Questions</div>
+        <div class="timer">
+          <div class="timeleft">Time Left :&nbsp;</div>
+          <div class="timer_sec">15</div>
+        </div>
+      </header>
+      <section class="questionbox">
+        <div class="que_text">
+          <span>Who is the President o India?</span>
+        </div>
+        <div class="optionlist">
+          <div class="option">
+            <span>Droupadi Murmu</span>
+            <div class="icon tick">&#x2713;</div>
+          </div>
+          <div class="option">
+            <span>Narendra Modi</span>
+            <div class="icon cross">&#10060;</div>
+          </div>
+          <div class="option">
+            <span>Amit Shah</span>
+          </div>
+          <div class="option">
+            <span>Rahul Gandhi</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quiz Box Footer -->
+      <footer>
+        <div class="total_que">
+            <span><p>2&nbsp;</p>&nbsp;of &nbsp;<p>5</p>
+        </div>
+        <button class="nextque">Next Question</button>
+      </footer>
+    </section>
+    <!-- Result Box -->
+    <div class="resultbox">
+      <div class="complete"><span class="congo"> Congratulations!</span>
+        You Have Completed the Quiz!</div>
+      <div class="scoretext">
+        <span>Sorry you got only,<p>&nbsp;2&nbsp;</p> out of<p>&nbsp;5</p> </span>
+      </div>
+      <div class="resultbuttons">
+          <button class="restart">Restart</button>
+          <button class="endquiz">End Quiz</button>
+      </div>
+     </div> 
+    <script src="script.js"></script>
+  </body>
+</html>
+   
